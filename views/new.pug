@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    header
+        h1= title
+    h3= subtitle
+    div.message-container
+        p Add a #{subtitle}
+        form(id='newmessage' action='/new' method='POST')
+            label(for='user', id='user') Username:
+            br
+            input(type='text', name='user', value='', placeholder='username')
+            br
+            br
+            label(for='message', id='message') Message:
+            br
+            textarea(name='message', value='', rows='10' placeholder='message')
+            br
+            br
+            input(type='submit' value='send')

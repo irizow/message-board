@@ -1,0 +1,16 @@
+
+
+extends layout
+
+block content
+  header
+    h1= title
+  div.container
+    each message in messages
+      div
+        p
+          strong user: #{message.user}
+        p text: #{message.text}
+        p #{message.added.toLocaleString().split(',')[0]}
+    button 
+      a(href='/new') new message

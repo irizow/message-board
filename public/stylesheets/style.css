@@ -1,0 +1,60 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(225, 225, 225);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: rgb(148, 10, 241);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+
+.container div {
+  background-color: white;
+  width: 30vw;
+  padding: 0px 30px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 3px grey;
+}
+
+button {
+  width: 10vw;
+  background-color: rgb(222, 172, 255);
+  color: black;
+  padding: 5px;
+  border: none;
+}
+
+button:hover {
+  border: 1px solid black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.message-container {
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 3px grey;
+}
